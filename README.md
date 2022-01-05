@@ -1,8 +1,8 @@
-# docthesis1-skilled-unskilled: README and Guidance
-
+# docthesis1-skilled-unskilled: README
+--------
 
 ## Overview
---------
+
 
 The code in this replication package constructs the analysis of ``Skilled and unskilled labour: Are they worth their weight in growth?'', which is the first chapter of my doctoral thesis available at the University of Essex's [Repository](http://repository.essex.ac.uk/31206/). Data sources are Lee and Lee (2016), Barro and Lee (2001), The World Bank (2017), Feenstra, Inklaar, and Timmer (2015). The model is calibrated using parameters from Bils and Klenow (2000), Montenegro and Patrinos (2014), Acemoglu and Autor (2011) and Ciccone and Peri (2005). All sources are presented in the paper too. 
 
@@ -10,21 +10,13 @@ The construction of the dataset and the estimations use Stata. Code for data cle
 
 This README complies to the structure and content that have been suggested by [Endorsers](https://github.com/social-science-data-editors/template_README/blob/development/Endorsers.md) of several journals of Social Sciences. Their template is available [here](https://github.com/social-science-data-editors/template_README/blob/master/template-README.md).
 
-
+--------
 ## Data Availability and Provenance Statements
-----------------------------
-### Statement about Rights
+
+### Rights, license and availability
 
 - [X] I certify that the author of the manuscript have legitimate access to and permission to use the data used in this manuscript. 
-
-
-### License for Data
-
-The data are licensed under a GNU General Public License v3.0. See LICENSE.txt for details.
-
-
-### Summary of Availability
-
+- [X] The data are licensed under a GNU General Public License v3.0. See LICENSE.txt for details.
 - [X] All data **are** publicly available.
 
 
@@ -82,11 +74,7 @@ Save the file in the directory `Input`.
 
 Datafile: `Input/pwt90.dta` (not provided)
 
-#### Parameters
-
-##### Mincerian coefficients
-
-###### Bils and Klenow (2000)
+#### Bils and Klenow (2000)
 
 The coefficients of the Mincerian equations are the cross-country averages
 as reported and used by Bils and Klenow's (2000) Table B1. The values equal 9.9 per cent for
@@ -119,19 +107,16 @@ skilled labour come from Acemoglu and Autor (2011) and Ciccone and Peri (2005). 
 Dataset list
 ------------
 
-> INSTRUCTIONS: In some cases, authors will provide one dataset (file) per data source, and the code to combine them. In others, in particular when data access might be restrictive, the replication package may only include derived/analysis data. Every file should be described. This can be provided as a Excel/CSV table, or in the table below.
-
-> INSTRUCTIONS: While it is often most convenient to provide data in the native format of the software used to analyze and process the data, not all formats are "open" and can be read by other (free) software. Data should at a minimum be provided in formats that can be read by open-source software (R, Python, others), and ideally be provided in non-proprietary, archival-friendly formats. 
-
-> INSTRUCTIONS: All data files should be fully documented: variables/columns should have labels (long-form meaningful names), and values should be explained. This might mean generating a codebook, pointing at a public codebook, or providing data in (non-proprietary) formats that allow for a rich description. This is in particular important for data that is not distributable.
-
-> INSTRUCTIONS: Some journals require, and it is considered good practice, to provide synthetic or simulated data that has some of the key characteristics of the restricted-access data which are not provided. The level of fidelity may vary - it may be useful for debugging only, or it should allow to assess the key characteristics of the statistical/econometric procedure or the main conclusions of the paper.
 
 | Data file | Source | Notes    |Provided |
 |-----------|--------|----------|---------|
-| `data/raw/lbd.dta` | LBD | Confidential | No |
-| `data/raw/terra.dta` | IPUMS Terra | As per terms of use | Yes |
-| `data/derived/regression_input.dta`| All listed | Combines multiple data sources, serves as input for Table 2, 3 and Figure 5. | Yes |
+| `Input/LeeLee_v1.dta` | Lee and Lee (2016) | School enrolment | No |
+| `Input/BL2013_M_v2.2.dta` | Barro and Lee (2001) | Schooling  | No |
+| `Input/pwt90.dta` | Penn World Table v9.0 | As per terms of use | No |
+| `Input/WB_duration_raw.xlsx` | Unesco/WB | Duration of secondary (SE.SEC.DURS) | Yes |
+| `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Annex Table 1 | Yes |
+| `Output/WB_duration_raw.dta` | Unesco/WB | Cleaned WB data | Yes |
+| `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Latest coefficient for each country | Yes |
 
 
 Computational requirements
