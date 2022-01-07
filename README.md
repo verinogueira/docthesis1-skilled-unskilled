@@ -164,15 +164,9 @@ Instructions to Replicators
 
 
 
-******
-
-# WORK IN PROCESS - original template below here
-
-******
-
-
-List of tables and programs
 ---------------------------
+
+## List of tables and programs
 
 
 The provided code reproduces:
@@ -184,12 +178,16 @@ The provided code reproduces:
 
 | Figure/Table #    | Program                  | Line Number | Output file                      | Note                            |
 |-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
-| Table 1           | 02_analysis/table1.do    |             | summarystats.csv                 ||
-| Table 2           | 02_analysis/table2and3.do| 15          | table2.csv                       ||
-| Table 3           | 02_analysis/table2and3.do| 145         | table3.csv                       ||
-| Figure 1          | n.a. (no data)           |             |                                  | Source: Herodus (2011)          |
-| Figure 2          | 02_analysis/fig2.do      |             | figure2.png                      ||
-| Figure 3          | 02_analysis/fig3.do      |             | figure-robustness.png            | Requires confidential data      |
+| Table 1           | 02_analysis/table1.do    |             | Tab1_descriptive.tex                 ||
+| Table 2           | 02_analysis/table2and3.do| 15          | Tab12_BKBJ.tex                       ||
+| Table 3           | 02_analysis/table2and3.do| 145         | Tab13_BKACES.tex                      ||
+
+
+******
+
+# WORK IN PROCESS - original template below here
+
+******
 
 ## References
 
