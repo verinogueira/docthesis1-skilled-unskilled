@@ -154,9 +154,9 @@ The provided code reproduces:
 
 | Table #    | Program                  | Line Number | Output file                      | Note                            |
 |-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
-| Table 1           | DoFiles/8_BKSK_exhibits.do    |             | Tab1_descriptive.tex                 ||
-| Table 2           | DoFiles/8_BKSK_exhibits.do |           | Tab12_BKBJ.tex                       ||
-| Table 3           | DoFiles/8_BKSK_exhibits.do |          | Tab13_BKACES.tex                      ||
+| Table 1           | DoFiles/8_BKSK_exhibits.do    |  7           | Tab1_descriptive.tex                 || As indicated in the code
+| Table 2           | DoFiles/8_BKSK_exhibits.do |     87      | Tab12_BKBJ.tex                       || As indicated in the code
+| Table 3           | DoFiles/8_BKSK_exhibits.do |     99     | Tab13_BKACES.tex                      || As indicated in the code
 
 
 ## References
