@@ -3,7 +3,7 @@
 
 The code in this replication package constructs the analysis of ``Skilled and unskilled labour: Are they worth their weight in growth?'', which is the first chapter of my doctoral thesis available at the University of Essex's [Repository](http://repository.essex.ac.uk/31206/). Data sources are Lee and Lee (2016), Barro and Lee (2001), The World Bank (2017), Feenstra, Inklaar, and Timmer (2015). The model is calibrated using parameters from Bils and Klenow (2000), Montenegro and Patrinos (2014), Acemoglu and Autor (2011) and Ciccone and Peri (2005). All sources are presented in the paper too. 
 
-The construction of the dataset and the estimations use Stata. Code for data cleaning and analysis is provided as part of the replication package. The main file runs all of the code to generate the data for the 10 figures and 3 tables in the paper. The replicator can expect the code to run for a couple of minutes.
+The construction of the dataset, analysis and exhibits use Stata. Code for data cleaning and analysis is provided as part of the replication package. The main file runs all of the code to generate the data for the 10 figures and 3 tables in the paper. The replicator can expect the code to run for a couple of minutes.
 
 
 --------
