@@ -159,6 +159,7 @@ The provided code reproduces:
 | Table 3           | DoFiles/8_BKSK_exhibits.do |     99     | Tab13_BKACES.tex                      || As indicated in the code
 
 
+---
 ## References
 
 ACEMOGLU, DARON, AND DAVID AUTOR (2011): "Skills, Tasks and Technologies: Implications for Employment and Earnings," vol. 4 of *Handbook of Labor Economics*,
