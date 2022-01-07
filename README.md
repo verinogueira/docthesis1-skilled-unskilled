@@ -152,7 +152,7 @@ The provided code reproduces:
 - [X] All tables and figures in the paper
 
 
-| Figure/Table #    | Program                  | Line Number | Output file                      | Note                            |
+| Table #    | Program                  | Line Number | Output file                      | Note                            |
 |-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
 | Table 1           | DoFiles/8_BKSK_exhibits.do    |             | Tab1_descriptive.tex                 ||
 | Table 2           | DoFiles/8_BKSK_exhibits.do |           | Tab12_BKBJ.tex                       ||
