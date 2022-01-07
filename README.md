@@ -1,5 +1,6 @@
 # docthesis1-skilled-unskilled: README
---------
+
+
 
 ## Overview
 
@@ -118,50 +119,33 @@ Dataset list
   - `sutex` (as of 2021-09-23)   
   - `estout` (as of 2021-09-23)  
   - `parmest` (version to Stata 11 *not any newer*)   
-  - the program "`000_BKSK_all.do`" has the code to install all dependencies locally, if necessary.
+  - the program `000_BKSK_all.do` has the code to install all dependencies locally, if necessary.
 
 
 ### Memory and Runtime Requirements
 
-
-#### Summary
-
-Approximate time needed to reproduce the analyses on a standard 2021 desktop machine:
-
-- [X] <10 minutes
-- [ ] 10-60 minutes
-- [ ] 1-8 hours
-- [ ] 8-24 hours
-- [ ] 1-3 days
-- [ ] 3-14 days
-- [ ] > 14 days
-- [ ] Not feasible to run on a desktop machine, as described below.
-
-#### Details
+Approximate time needed to reproduce the analyses on a standard 2021 desktop machine: less than 10 minutes.
 
 The code was last run on a **dual-core (i5-3210M) Intel-based laptop with 6 GB of RAM using Windows 10 Pro version 20H2**. 
 
 
-
-Description of code
 ----------------------------
-
+## Description of code
 
 - The program `DoFiles/000_BKSK_all.do` will run all the programs in `DoFiles/000_BKSK_all`. It also presents the installation of the required packages.
 
-### (Optional, but recommended) License for Code
+### License for Code
 
 
 The code is licensed under a GNU General Public License. See [LICENSE.txt](LICENSE.txt) for details.
 
-Instructions to Replicators
 ---------------------------
+## Instructions to Replicators
 
 - Download the data files referenced above. Each should be stored in the subdirectory `Input/`, in the format that you download them in. No further action is needed on the replicator's part.
 - Edit `DoFiles/000_BKSK_all.do` to adjust the default path
 - Check required packages and install whenever necessary using instructions in the first block of `DoFiles/000_BKSK_all.do`
 - Run `DoFiles/000_BKSK_all.do` to produce all the dataset, analysis and exhibits of the paper in sequence. Data will be saved in the subdirectory `Output/` while the figures and tables will be saved in the subdirectory `Exhibits/`
-
 
 
 ---------------------------
@@ -173,33 +157,37 @@ The provided code reproduces:
 
 - [X] All numbers provided in text in the paper
 - [X] All tables and figures in the paper
-- [ ] Selected tables and figures in the paper, as explained and justified below.
 
 
 | Figure/Table #    | Program                  | Line Number | Output file                      | Note                            |
 |-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
-| Table 1           | 02_analysis/table1.do    |             | Tab1_descriptive.tex                 ||
-| Table 2           | 02_analysis/table2and3.do| 15          | Tab12_BKBJ.tex                       ||
-| Table 3           | 02_analysis/table2and3.do| 145         | Tab13_BKACES.tex                      ||
+| Table 1           | DoFiles/8_BKSK_exhibits.do    |             | Tab1_descriptive.tex                 ||
+| Table 2           | DoFiles/8_BKSK_exhibits.do |           | Tab12_BKBJ.tex                       ||
+| Table 3           | DoFiles/8_BKSK_exhibits.do |          | Tab13_BKACES.tex                      ||
 
-
-******
-
-# WORK IN PROCESS - original template below here
-
-******
 
 ## References
 
-> INSTRUCTIONS: As in any scientific manuscript, you should have proper references. For instance, in this sample README, we cited "Ruggles et al, 2019" and "DESE, 2019" in a Data Availability Statement. The reference should thus be listed here, in the style of your journal:
+ACEMOGLU, DARON, AND DAVID AUTOR (2011): "Skills, Tasks and Technologies: Implications for Employment and Earnings," vol. 4 of *Handbook of Labor Economics*,
+chap. 12, pp. 1043–1171. Elsevier.
 
-Steven Ruggles, Steven M. Manson, Tracy A. Kugler, David A. Haynes II, David C. Van Riper, and Maryia Bakhtsiyarava. 2018. "IPUMS Terra: Integrated Data on Population and Environment: Version 2 [dataset]." Minneapolis, MN: *Minnesota Population Center, IPUMS*. https://doi.org/10.18128/D090.V2
+BARRO, ROBERT J., AND JONG WHA LEE (2001): "International Data on Educational Attainment: Updates and Implications," *Oxford Economic Papers*, 53(3), 541–63.
 
-Department of Elementary and Secondary Education (DESE), 2019. "Student outcomes database [dataset]" *Massachusetts Department of Elementary and Secondary Education (DESE)*. Accessed January 15, 2019.
+BILS, MARK, AND PETER J. KLENOW (2000): "Does Schooling Cause Growth?," *American Economic Review*, 90(5), 1160–1183.
 
-U.S. Bureau of Economic Analysis (BEA). 2016. “Table 30: "Economic Profile by County, 1969-2016.” (accessed Sept 1, 2017).
+CICCONE, ANTONIO, AND GIOVANNI PERI (2005): "Long-Run Substitutability Between More and Less Educated Workers: Evidence from U.S. States, 1950-1990," *The Review
+of Economics and Statistics*, 87(4), 652–663.
 
-Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, M. Lagos, P. Norris, E. Ponarin & B. Puranen et al. (eds.). 2014. World Values Survey: Round Six - Country-Pooled Datafile Version: http://www.worldvaluessurvey.org/WVSDocumentationWV6.jsp. Madrid: JD Systems Institute.
+FEENSTRA, ROBERT, ROBERT INKLAAR, AND MARCEL TIMMER (2015): "The Next Generation of the PennWorld Table," *American Economic Review*, 105(10), 3150–82.
+
+LEE, JONG-WHA, AND HANOL LEE (2016): "Human capital in the long run," *Journal of Development Economics*, 122(C), 147–169.
+
+MONTENEGRO, CLAUDIO E., AND HARRY ANTHONY PATRINOS (2014): "Comparable estimates of returns to schooling around the world," *Policy Research Working Paper
+Series* 7020, The World Bank.
+
+THE WORLD BANK (2017): "World Development Indicators - Education: Outcomes," https://data.worldbank.org/indicator/SE.SEC.DURS, Accessed 19 Jul 2018.
+
+
 
 ---
 
