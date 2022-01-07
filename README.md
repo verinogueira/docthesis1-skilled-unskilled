@@ -8,7 +8,6 @@ The code in this replication package constructs the analysis of ``Skilled and un
 
 The construction of the dataset and the estimations use Stata. Code for data cleaning and analysis is provided as part of the replication package. The main file runs all of the code to generate the data for the 10 figures and 3 tables in the paper. The replicator can expect the code to run for a couple of minutes.
 
-This README complies to the structure and content that have been suggested by [Endorsers](https://github.com/social-science-data-editors/template_README/blob/development/Endorsers.md) of several journals of Social Sciences. Their template is available [here](https://github.com/social-science-data-editors/template_README/blob/master/template-README.md).
 
 --------
 ## Data Availability and Provenance Statements
@@ -108,8 +107,9 @@ Dataset list
 | `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Latest coefficient for each country | Yes |
 
 
-Computational requirements
 ---------------------------
+## Computational requirements
+
 
 ### Software Requirements
 
@@ -123,7 +123,6 @@ Computational requirements
 
 ### Memory and Runtime Requirements
 
-> INSTRUCTIONS: Memory and compute-time requirements may also be relevant or even critical. Some example text follows. It may be useful to break this out by Table/Figure/section of processing. For instance, some estimation routines might run for weeks, but data prep and creating figures might only take a few minutes.
 
 #### Summary
 
@@ -144,6 +143,27 @@ The code was last run on a **dual-core (i5-3210M) Intel-based laptop with 6 GB o
 
 
 
+Description of code
+----------------------------
+
+
+- The program `DoFiles/000_BKSK_all.do` will run all the programs in `DoFiles/000_BKSK_all`. It also presents the installation of the required packages.
+
+### (Optional, but recommended) License for Code
+
+
+The code is licensed under a GNU General Public License. See [LICENSE.txt](LICENSE.txt) for details.
+
+Instructions to Replicators
+---------------------------
+
+- Download the data files referenced above. Each should be stored in the subdirectory `Input/`, in the format that you download them in. No further action is needed on the replicator's part.
+- Edit `DoFiles/000_BKSK_all.do` to adjust the default path
+- Check required packages and install whenever necessary using instructions in the first block of `DoFiles/000_BKSK_all.do`
+- Run `DoFiles/000_BKSK_all.do` to produce all the dataset, analysis and exhibits of the paper in sequence. Data will be saved in the subdirectory `Output/` while the figures and tables will be saved in the subdirectory `Exhibits/`
+
+
+
 ******
 
 # WORK IN PROCESS - original template below here
@@ -151,63 +171,14 @@ The code was last run on a **dual-core (i5-3210M) Intel-based laptop with 6 GB o
 ******
 
 
-Description of code
-----------------------------
-
-> INSTRUCTIONS: Give a high-level overview of the program files and their purpose. Remove redundant/ obsolete files from the Replication archive.
-
-- Programs in `programs/01_dataprep` will extract and reformat all datasets referenced above. The file `programs/01_dataprep/main.do` will run them all.
-- Programs in `programs/02_analysis` generate all tables and figures in the main body of the article. The program `programs/02_analysis/main.do` will run them all. Each program called from `main.do` identifies the table or figure it creates (e.g., `05_table5.do`).  Output files are called appropriate names (`table5.tex`, `figure12.png`) and should be easy to correlate with the manuscript.
-- Programs in `programs/03_appendix` will generate all tables and figures  in the online appendix. The program `programs/03_appendix/main-appendix.do` will run them all. 
-- Ado files have been stored in `programs/ado` and the `main.do` files set the ADO directories appropriately. 
-- The program `programs/00_setup.do` will populate the `programs/ado` directory with updated ado packages, but for purposes of exact reproduction, this is not needed. The file `programs/00_setup.log` identifies the versions as they were last updated.
-- The program `programs/config.do` contains parameters used by all programs, including a random seed. Note that the random seed is set once for each of the two sequences (in `02_analysis` and `03_appendix`). If running in any order other than the one outlined below, your results may differ.
-
-### (Optional, but recommended) License for Code
-
-> INSTRUCTIONS: Most journal repositories provide for a default license, but do not impose a specific license. Authors should actively select a license. This should be provided in a LICENSE.txt file, separately from the README, possibly combined with the license for any data provided. Some code may be subject to inherited license requirements, i.e., the original code author may allow for redistribution only if the code is licensed under specific rules - authors should check with their sources. For instance, some code authors require that their article describing the econometrics of the package be cited. Licensing can be complex. Some non-legal guidance may be found [here](https://social-science-data-editors.github.io/guidance/Licensing_guidance.html).
-
-The code is licensed under a MIT/BSD/GPL [choose one!] license. See [LICENSE.txt](LICENSE.txt) for details.
-
-Instructions to Replicators
----------------------------
-
-> INSTRUCTIONS: The first two sections ensure that the data and software necessary to conduct the replication have been collected. This section then describes a human-readable instruction to conduct the replication. This may be simple, or may involve many complicated steps. It should be a simple list, no excess prose. Strict linear sequence. If more than 4-5 manual steps, please wrap a main program/Makefile around them, in logical sequences. Examples follow.
-
-- Edit `programs/config.do` to adjust the default path
-- Run `programs/00_setup.do` once on a new system to set up the working environment. 
-- Download the data files referenced above. Each should be stored in the prepared subdirectories of `data/`, in the format that you download them in. Do not unzip. Scripts are provided in each directory to download the public-use files. Confidential data files requested as part of your FSRDC project will appear in the `/data` folder. No further action is needed on the replicator's part.
-- Run `programs/01_main.do` to run all steps in sequence.
-
-### Details
-
-- `programs/00_setup.do`: will create all output directories, install needed ado packages. 
-   - If wishing to update the ado packages used by this archive, change the parameter `update_ado` to `yes`. However, this is not needed to successfully reproduce the manuscript tables. 
-- `programs/01_dataprep`:  
-   - These programs were last run at various times in 2018. 
-   - Order does not matter, all programs can be run in parallel, if needed. 
-   - A `programs/01_dataprep/main.do` will run them all in sequence, which should take about 2 hours.
-- `programs/02_analysis/main.do`.
-   - If running programs individually, note that ORDER IS IMPORTANT. 
-   - The programs were last run top to bottom on July 4, 2019.
-- `programs/03_appendix/main-appendix.do`. The programs were last run top to bottom on July 4, 2019.
-- Figure 1: The figure can be reproduced using the data provided in the folder “2_data/data_map”, and ArcGIS Desktop (Version 10.7.1) by following these (manual) instructions:
-  - Create a new map document in ArcGIS ArcMap, browse to the folder
-“2_data/data_map” in the “Catalog”, with files  "provinceborders.shp", "lakes.shp", and "cities.shp". 
-  - Drop the files listed above onto the new map, creating three separate layers. Order them with "lakes" in the top layer and "cities" in the bottom layer.
-  - Right-click on the cities file, in properties choose the variable "health"... (more details)
-
 List of tables and programs
 ---------------------------
 
-> INSTRUCTIONS: Your programs should clearly identify the tables and figures as they appear in the manuscript, by number. Sometimes, this may be obvious, e.g. a program called "`table1.do`" generates a file called `table1.png`. Sometimes, mnemonics are used, and a mapping is necessary. In all circumstances, provide a list of tables and figures, identifying the program (and possibly the line number) where a figure is created.
->
-> NOTE: If the public repository is incomplete, because not all data can be provided, as described in the data section, then the list of tables should clearly indicate which tables, figures, and in-text numbers can be reproduced with the public material provided.
 
 The provided code reproduces:
 
-- [ ] All numbers provided in text in the paper
-- [ ] All tables and figures in the paper
+- [X] All numbers provided in text in the paper
+- [X] All tables and figures in the paper
 - [ ] Selected tables and figures in the paper, as explained and justified below.
 
 
@@ -236,4 +207,4 @@ Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, 
 
 ## Acknowledgements
 
-Some content on this page was copied from [Hindawi](https://www.hindawi.com/research.data/#statement.templates). Other content was adapted  from [Fort (2016)](https://doi.org/10.1093/restud/rdw057), Supplementary data, with the author's permission.
+This README complies to the structure and content that have been suggested by [Endorsers](https://github.com/social-science-data-editors/template_README/blob/development/Endorsers.md) of several journals of Social Sciences. Their template is available [here](https://github.com/social-science-data-editors/template_README/blob/master/template-README.md).
