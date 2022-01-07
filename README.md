@@ -27,7 +27,7 @@ in this chapter comes from the most recent update available. The sample selected
 is restricted to the male population to comply with the Mincerian returns used. 
 
 Data can be downloaded from https://github.com/barrolee/BarroLeeDataSet/blob/master/LeeLee/LeeLee_v1.dta. 
-Save the file in the directory `Input`. 
+Save the file in the directory `Input/`. 
 
 Datafile: `Input/LeeLee_v1.dta` (not provided)
 
@@ -40,7 +40,7 @@ Lee, presenting educational data for 146 countries, ranging from 1950 to 2010. T
 version used is the 2.1. Once more, only the male population subsample was selected.
 
 Data can be downloaded from https://barrolee.github.io/BarroLeeDataSet/BLData/BL2013_M_v2.2.dta. 
-Save the file in the directory `Input`. 
+Save the file in the directory `Input/`. 
 
 Datafile: `Input/BL2013_M_v2.2.dta` (not provided)
 
@@ -54,7 +54,7 @@ the variable for the number of grades (years) in secondary education (Duration).
 
 
 Secondary education, duration (years): https://data.worldbank.org/indicator/SE.SEC.DURS
-Choose "Download -> Excel" at the end of the menu on the right-hand side. Save file in `Input`
+Choose "Download -> Excel" at the end of the menu on the right-hand side. Save file in `Input/`
 directory. Rename it `WB_duration_raw.xlsx`.
 
 Datafile: `Input/WB_duration_raw.xlsx` (provided)
@@ -66,7 +66,7 @@ Penn World Table (PWT) (Feenstra, Inklaar, and Timmer, 2015).
 
 
 Data can be downloaded from https://www.rug.nl/ggdc/docs/pwt90.dta. 
-Save the file in the directory `Input`. 
+Save the file in the directory `Input/`. 
 
 Datafile: `Input/pwt90.dta` (not provided)
 
@@ -79,7 +79,7 @@ profile level and squared, respectively. These are typed directly into the equat
 
 ##### Montenegro and Patrinos (2014)
 
-The Mincerian coefficients used to calculate skill premia come from Montenegro and Patrinos (2014). The paper's Annex Table 1 is converted to Excel and available in the directory `Input`. Please cite the original data providers when using this data. 
+The Mincerian coefficients used to calculate skill premia come from Montenegro and Patrinos (2014). The paper's Annex Table 1 is converted to Excel and available in the directory `Input/`. Please cite the original data providers when using this data. 
 
 Datafile: `Input/MP_mincer.xls` (provided)
 
