@@ -1,10 +1,6 @@
 # docthesis1-skilled-unskilled: README
 
 
-
-## Overview
-
-
 The code in this replication package constructs the analysis of ``Skilled and unskilled labour: Are they worth their weight in growth?'', which is the first chapter of my doctoral thesis available at the University of Essex's [Repository](http://repository.essex.ac.uk/31206/). Data sources are Lee and Lee (2016), Barro and Lee (2001), The World Bank (2017), Feenstra, Inklaar, and Timmer (2015). The model is calibrated using parameters from Bils and Klenow (2000), Montenegro and Patrinos (2014), Acemoglu and Autor (2011) and Ciccone and Peri (2005). All sources are presented in the paper too. 
 
 The construction of the dataset and the estimations use Stata. Code for data cleaning and analysis is provided as part of the replication package. The main file runs all of the code to generate the data for the 10 figures and 3 tables in the paper. The replicator can expect the code to run for a couple of minutes.
@@ -93,15 +89,13 @@ The values for the parameter representing the elasticity of substitution between
 skilled labour come from Acemoglu and Autor (2011) and Ciccone and Peri (2005). The range between 1 and 2 used in the sensitivity analysis derives from the former while the standard value of 1.4 is obtained in the latter.
 
 
-Dataset list
-------------
-
+### Dataset list
 
 | Data file | Source | Notes    |Provided |
 |-----------|--------|----------|---------|
-| `Input/LeeLee_v1.dta` | Lee and Lee (2016) | School enrolment | No |
-| `Input/BL2013_M_v2.2.dta` | Barro and Lee (2001) | Schooling  | No |
-| `Input/pwt90.dta` | Penn World Table v9.0 | As per terms of use | No |
+| `Input/LeeLee_v1.dta` | Lee and Lee (2016) | https://github.com/barrolee/BarroLeeDataSet/blob/master/LeeLee/LeeLee_v1.dta | No |
+| `Input/BL2013_M_v2.2.dta` | Barro and Lee (2001) | https://barrolee.github.io/BarroLeeDataSet/BLData/BL2013_M_v2.2.dta  | No |
+| `Input/pwt90.dta` | Penn World Table v9.0 | https://www.rug.nl/ggdc/docs/pwt90.dta | No |
 | `Input/WB_duration_raw.xlsx` | Unesco/WB | Duration of secondary (SE.SEC.DURS) | Yes |
 | `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Annex Table 1 | Yes |
 | `Output/WB_duration_raw.dta` | Unesco/WB | Cleaned WB data | Yes |
@@ -119,7 +113,7 @@ Dataset list
   - `sutex` (as of 2021-09-23)   
   - `estout` (as of 2021-09-23)  
   - `parmest` (version to Stata 11 *not any newer*)   
-  - the program `000_BKSK_all.do` has the code to install all dependencies locally, if necessary.
+  - the program `DoFiles/000_BKSK_all.do` has the code to install all dependencies locally, if necessary.
 
 
 ### Memory and Runtime Requirements
@@ -132,10 +126,9 @@ The code was last run on a **dual-core (i5-3210M) Intel-based laptop with 6 GB o
 ----------------------------
 ## Description of code
 
-- The program `DoFiles/000_BKSK_all.do` will run all the programs in `DoFiles/000_BKSK_all`. It also presents the installation of the required packages.
+The program `DoFiles/000_BKSK_all.do` will run all the programs in `DoFiles/000_BKSK_all`. It also presents the installation of the required packages.
 
 ### License for Code
-
 
 The code is licensed under a GNU General Public License. See [LICENSE.txt](LICENSE.txt) for details.
 
