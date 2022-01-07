@@ -99,7 +99,7 @@ skilled labour come from Acemoglu and Autor (2011) and Ciccone and Peri (2005). 
 | `Input/WB_duration_raw.xlsx` | Unesco/WB | Duration of secondary (SE.SEC.DURS) | Yes |
 | `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Annex Table 1 | Yes |
 | `Output/WB_duration_raw.dta` | Unesco/WB | Cleaned WB data | Yes |
-| `Input/MP_mincer.xls` | Montenegro and Patrinos (2014) | Latest coefficient for each country | Yes |
+| `Output/MP_mincer.xls` | Montenegro and Patrinos (2014) | Cleaned MP data | Yes |
 
 
 ---------------------------
