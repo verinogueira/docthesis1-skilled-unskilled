@@ -93,17 +93,6 @@ The values for the parameter representing the elasticity of substitution between
 skilled labour come from Acemoglu and Autor (2011) and Ciccone and Peri (2005). The range between 1 and 2 used in the sensitivity analysis derives from the former while the standard value of 1.4 is obtained in the latter.
 
 
-
-******
-
-# WORK IN PROCESS - original template below here
-
-******
-
-
-
-
-
 Dataset list
 ------------
 
@@ -122,38 +111,15 @@ Dataset list
 Computational requirements
 ---------------------------
 
-> INSTRUCTIONS: In general, the specific computer code used to generate the results in the article will be within the repository that also contains this README. However, other computational requirements - shared libraries or code packages, required software, specific computing hardware - may be important, and is always useful, for the goal of replication. Some example text follows. 
-
-> INSTRUCTIONS: We strongly suggest providing setup scripts that install/set up the environment. Sample scripts for [Stata](https://github.com/gslab-econ/template/blob/master/config/config_stata.do),  [R](https://github.com/labordynamicsinstitute/paper-template/blob/master/programs/global-libraries.R), [Julia](https://github.com/labordynamicsinstitute/paper-template/blob/master/programs/packages.jl) are easy to set up and implement. Specific software may have more sophisticated tools: [Python](https://pip.pypa.io/en/stable/user_guide/#ensuring-repeatability), [Julia](https://julia.quantecon.org/more_julia/tools_editors.html#Package-Environments).
-
 ### Software Requirements
 
-> INSTRUCTIONS: List all of the software requirements, up to and including any operating system requirements, for the entire set of code. It is suggested to distribute most dependencies together with the replication package if allowed, in particular if sourced from unversioned code repositories, Github repos, and personal webpages. In all cases, list the version *you* used. 
+- Stata (code was last run with version 14)
+  - `sxpose` (as of 2021-09-23)   
+  - `sutex` (as of 2021-09-23)   
+  - `estout` (as of 2021-09-23)  
+  - `parmest` (version to Stata 11 *not any newer*)   
+  - the program "`000_BKSK_all.do`" has the code to install all dependencies locally, if necessary.
 
-- Stata (code was last run with version 15)
-  - `estout` (as of 2018-05-12)
-  - `rdrobust` (as of 2019-01-05)
-  - the program "`0_setup.do`" will install all dependencies locally, and should be run once.
-- Python 3.6.4
-  - `pandas` 0.24.2
-  - `numpy` 1.16.4
-  - the file "`requirements.txt`" lists these dependencies, please run "`pip install -r requirements.txt`" as the first step. See [https://pip.pypa.io/en/stable/user_guide/#ensuring-repeatability](https://pip.pypa.io/en/stable/user_guide/#ensuring-repeatability) for further instructions on creating and using the "`requirements.txt`" file.
-- Intel Fortran Compiler version 20200104
-- Matlab (code was run with Matlab Release 2018a)
-- R 3.4.3
-  - `tidyr` (0.8.3)
-  - `rdrobust` (0.99.4)
-  - the file "`0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
-
-Portions of the code use bash scripting, which may require Linux.
-
-Portions of the code use Powershell scripting, which may require Windows 10 or higher.
-
-### Controlled Randomness
-
-> INSTRUCTIONS: Some estimation code uses random numbers, almost always provided by pseudorandom number generators (PRNGs). For reproducibility purposes, these should be provided with a deterministic seed, so that the sequence of numbers provided is the same for the original author and any replicators. While this is not always possible, it is a requirement by many journals' policies. The seed should be set once, and not use a time-stamp. If using parallel processing, special care needs to be taken. If using multiple programs in sequence, care must be taken on how to call these programs, ideally from a main program, so that the sequence is not altered.
-
-- [ ] Random seed is set at line _____ of program ______
 
 ### Memory and Runtime Requirements
 
@@ -161,9 +127,9 @@ Portions of the code use Powershell scripting, which may require Windows 10 or h
 
 #### Summary
 
-Approximate time needed to reproduce the analyses on a standard (CURRENT YEAR) desktop machine:
+Approximate time needed to reproduce the analyses on a standard 2021 desktop machine:
 
-- [ ] <10 minutes
+- [X] <10 minutes
 - [ ] 10-60 minutes
 - [ ] 1-8 hours
 - [ ] 8-24 hours
@@ -174,21 +140,18 @@ Approximate time needed to reproduce the analyses on a standard (CURRENT YEAR) d
 
 #### Details
 
-The code was last run on a **4-core Intel-based laptop with MacOS version 10.14.4**. 
-
-Portions of the code were last run on a **32-core Intel server with 1024 GB of RAM, 12 TB of fast local storage**. Computation took 734 hours. 
-
-Portions of the code were last run on a **12-node AWS R3 cluster, consuming 20,000 core-hours**.  
-
-> INSTRUCTIONS: Identifiying hardware and OS can be obtained through a variety of ways:
-> Some of these details can be found as follows:
->
-> - (Windows) by right-clicking on "This PC" in File Explorer and choosing "Properties"
-> - (Mac) Apple-menu > "About this Mac"
-> - (Linux) see code in [tools/linux-system-info.sh](https://github.com/AEADataEditor/replication-template/blob/master/tools/linux-system-info.sh)`
+The code was last run on a **dual-core (i5-3210M) Intel-based laptop with 6 GB of RAM using Windows 10 Pro version 20H2**. 
 
 
-Description of programs/code
+
+******
+
+# WORK IN PROCESS - original template below here
+
+******
+
+
+Description of code
 ----------------------------
 
 > INSTRUCTIONS: Give a high-level overview of the program files and their purpose. Remove redundant/ obsolete files from the Replication archive.
