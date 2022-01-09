@@ -4,7 +4,7 @@ clear all
 set more off
 
 * set current directory *
-cd "C:\Users\vd16509\OneDrive - University of Essex\RESEARCH\PUBLISHING\Chapter1\CODESSSS"
+cd "C:\..."
 
 
 
