@@ -4,8 +4,7 @@ clear all
 set more off
 
 * set current directory *
-cd "C:\..."
-
+cd "C:\YourPath\YourFolder"
 
 
 /* packages required > uncomment below to install */
